@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#^syntax detection
+# @see https://github.com/bcoe/librarian-ansible
+
+site "https://galaxy.ansible.com/api/v1"
+
+role "andyceo.apache"

@@ -1,2 +1,4 @@
 .vagrant
+ansible/.librarian/tmp
+ansible/Ansiblefile.lock
 hello.txt
