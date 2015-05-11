@@ -4,7 +4,7 @@ DevOps - Vagrant / Ansible project structure
 Installation
 ----------------
 
-    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/library/ --force --ignore-errors
+    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/ --force --ignore-errors
 
 References
 -------------
