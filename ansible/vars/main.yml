@@ -1,0 +1,19 @@
+---
+
+  # role: geerlingguy.apache
+  apache_listen_port: 8080
+  apache_vhosts:
+    - {servername: "example.com", documentroot: "/var/www/vhosts/example_com"}
+
+  # role: geerlingguy.php
+  php_memory_limit: "128M"
+  php_max_execution_time: "90"
+  php_upload_max_filesize: "256M"
+  # @see: http://packages.ubuntu.com/source/trusty-updates/php5
+  php_packages:
+    - php5
+    - php5-cgi
+    - php5-cli
+    - php5-common
+    - php5-curl
+    - php5-dev

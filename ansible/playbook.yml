@@ -1,6 +1,11 @@
 ---
 - hosts: all
+  vars_files:
+    - vars/main.yml
   tasks:
-
-  - name: Hello World
-    shell: /bin/echo "Hello World" > /vagrant/hello.txt
+    - name: Hello World
+      shell: /bin/echo "Hello World" > /vagrant/hello.txt
+  roles:
+    - { role: geerlingguy.apache }
+#    - { role: geerlingguy.mysql }
+    - { role: geerlingguy.php }
