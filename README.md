@@ -1,11 +1,6 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
-Installation
-----------------
-
-    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/ --force --ignore-errors
-
 References
 -------------
 
@@ -16,3 +11,11 @@ References
     - [geerlingguy/ansible-for-devops](https://github.com/geerlingguy/ansible-for-devops)
 - [bcoe/librarian-ansible](https://github.com/bcoe/librarian-ansible)
 - [Leonid Mirsky - Creating hadoop test environment with ansible and vagrant](http://leonidmirsky.com/ansible/hadoop/devops/2013/11/19/creating-hadoop-test-environment-with-ansible-and-vagrant.html)
+
+Snippets
+----------------
+    
+    echo "127.0.0.1" > ~/.ansible_hosts
+    export ANSIBLE_HOSTS=~/.ansible_hosts
+
+    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/ --force --ignore-errors
