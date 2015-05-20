@@ -11,6 +11,8 @@ References
     - [geerlingguy/ansible-for-devops](https://github.com/geerlingguy/ansible-for-devops)
 - [bcoe/librarian-ansible](https://github.com/bcoe/librarian-ansible)
 - [Leonid Mirsky - Creating hadoop test environment with ansible and vagrant](http://leonidmirsky.com/ansible/hadoop/devops/2013/11/19/creating-hadoop-test-environment-with-ansible-and-vagrant.html)
+- [An example of provisioning and deployment with Ansible - Stavros' Stuff](http://www.stavros.io/posts/example-provisioning-and-deployment-ansible/)
+
 
 Snippets
 ----------------
