@@ -20,4 +20,4 @@ Snippets
     echo "127.0.0.1" > ~/.ansible_hosts
     export ANSIBLE_HOSTS=~/.ansible_hosts
 
-    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/ --force --ignore-errors
+    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/galaxy --force --ignore-errors
