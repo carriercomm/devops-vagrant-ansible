@@ -1,6 +1,30 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
+Requirements
+---------------
+
+- [VirtualBox](https://www.virtualbox.org/)
+    - <https://www.virtualbox.org/wiki/Downloads>
+- [Vagrant](http://www.vagrantup.com/)
+    - <http://www.vagrantup.com/downloads.html>
+- [Ansible](http://www.ansible.com/)
+    - <http://docs.ansible.com/intro_installation.html>
+
+
+Installation
+----------------
+    
+    $ ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/galaxy --force --ignore-errors
+    $ vagrant up
+
+
+Known Issues
+---------------
+
+- [`vagrant up` hangs at "Waiting for VM to boot. This can take a few minutes" · mitchellh/vagrant Wiki](https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22)
+
+
 References
 -------------
 
@@ -14,10 +38,4 @@ References
 - [An example of provisioning and deployment with Ansible - Stavros' Stuff](http://www.stavros.io/posts/example-provisioning-and-deployment-ansible/)
 
 
-Snippets
-----------------
-    
-    echo "127.0.0.1" > ~/.ansible_hosts
-    export ANSIBLE_HOSTS=~/.ansible_hosts
 
-    ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/galaxy --force --ignore-errors
