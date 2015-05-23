@@ -7,5 +7,5 @@
       shell: /bin/echo "Hello World!" > /vagrant/hello.txt
   roles:
     - { role: geerlingguy.apache }
-#    - { role: geerlingguy.mysql }
+    - { role: geerlingguy.mysql }
     - { role: geerlingguy.php }

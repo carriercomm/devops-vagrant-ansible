@@ -1,5 +1,8 @@
-# from galaxy
+##
+# Ansible Galaxy
+# @see http://docs.ansible.com/galaxy.html
+##
+
 - src: geerlingguy.apache
 - src: geerlingguy.mysql
 - src: geerlingguy.php
-# - src: bakhti.elk
