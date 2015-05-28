@@ -15,7 +15,7 @@ Requirements
 Installation
 ----------------
     
-    $ ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/galaxy --force --ignore-errors
+    $ ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/vendor --force --ignore-errors
     $ vagrant up
 
 
