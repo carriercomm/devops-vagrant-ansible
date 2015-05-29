@@ -1,3 +1,4 @@
 .vagrant
-ansible/roles/galaxy/*
-hello.txt
+ansible/roles/vendor/*
+project/www/index.html
+project/www/info.php

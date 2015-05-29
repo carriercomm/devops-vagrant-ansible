@@ -22,14 +22,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # @see https://github.com/dotless-de/vagrant-vbguest
     config.vbguest.auto_update = true
 
-    config.vm.provision 'ansible' do |ansible|
-        ansible.playbook = 'ansible/playbook.yml'
-        #ansible.inventory_path = 'ansible/inventories/FILENAME'
-
-        # Disable default limit (required with Vagrant 1.5+)
-        ansible.limit = 'all'
-        ansible.sudo = true
-        ansible.verbose = true
+    # LAMP Stack
+    config.vm.define :lamp, primary: true do |lamp|
+        lamp.vm.hostname = 'lamp'
+        lamp.vm.network 'private_network', ip: '192.168.33.10'
+        lamp.vm.provision :ansible do |ansible|
+            ansible.playbook = 'ansible/playbook.yml'
+            #ansible.inventory_path = 'ansible/inventories/FILENAME'
+            ansible.limit = 'all'
+            ansible.sudo = true
+            ansible.verbose = true
+        end
     end
 
 end

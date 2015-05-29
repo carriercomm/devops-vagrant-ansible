@@ -1,9 +1,9 @@
 ---
 
   # role: geerlingguy.apache
-  apache_listen_port: 8080
+  apache_listen_port: 80
   apache_vhosts:
-    - {servername: "example.com", documentroot: "/var/www/vhosts/example_com"}
+    - {servername: "project.dev", documentroot: "/vagrant/project/www/"}
 
   # role: geerlingguy.php
   php_memory_limit: "128M"

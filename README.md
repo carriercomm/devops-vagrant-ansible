@@ -8,6 +8,7 @@ Requirements
     - <https://www.virtualbox.org/wiki/Downloads>
 - [Vagrant](http://www.vagrantup.com/)
     - <http://www.vagrantup.com/downloads.html>
+    - [vagrant-vbguest plugin](https://github.com/dotless-de/vagrant-vbguest)
 - [Ansible](http://www.ansible.com/)
     - <http://docs.ansible.com/intro_installation.html>
 
