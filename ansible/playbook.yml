@@ -1,14 +1,19 @@
 ---
 - hosts: all
+
   vars_files:
     - vars/init.yml
+
   tasks:
-    - name: Hello World!
+    - name: playbook.yml | Hello World!
       shell: /bin/echo "<h1>Hello World! from playbook.yml</h1>" > /vagrant/project/www/index.html
-    - name: PHP Info
+
+    - name: playbook.yml | PHP Info
       shell: /bin/echo "<?php phpinfo(); ?>" > /vagrant/project/www/info.php
-    - name: Install Apache libapache2-mod-php5
+
+    - name: playbook.yml | Install Apache libapache2-mod-php5
       apt: pkg=libapache2-mod-php5 state=installed update_cache=true
+
   roles:
     - { role: geerlingguy.apache }
     - { role: geerlingguy.mysql }

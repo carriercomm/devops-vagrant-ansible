@@ -3,6 +3,11 @@
 # @see http://docs.ansible.com/galaxy.html
 ##
 
+# @see https://galaxy.ansible.com/list#/roles/428
 - src: geerlingguy.apache
+
+# @see https://galaxy.ansible.com/list#/roles/435
 - src: geerlingguy.mysql
+
+# @see https://galaxy.ansible.com/list#/roles/432
 - src: geerlingguy.php

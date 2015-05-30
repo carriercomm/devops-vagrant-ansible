@@ -19,3 +19,16 @@
     - php5-common
     - php5-curl
     - php5-dev
+    - php5-mysqlnd
+
+
+  # role: geerlingguy.mysql
+  mysql_root_password: rootpassword
+  mysql_databases:
+    - name: project_dev
+  mysql_users:
+    - name: project_user
+      host: "%"
+      password: projectuserpassword
+      priv: "project_dev.*:ALL"
+
