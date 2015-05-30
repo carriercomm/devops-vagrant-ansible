@@ -1,6 +1,8 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
+# _Work In Progress_
+
 Requirements
 ---------------
 
@@ -29,12 +31,21 @@ Known Issues
 References
 -------------
 
+### Docs
+
 - [Ansible Provisioning - Vagrant Documentation](https://docs.vagrantup.com/v2/provisioning/ansible.html)
 - [Ansible Galaxy — Ansible Documentation](http://docs.ansible.com/galaxy.html)
+
+### Code Examples
+
 - [ansible/ansible-examples](https://github.com/ansible/ansible-examples)
 - [geerlingguy/ansible-vagrant-examples](https://github.com/geerlingguy/ansible-vagrant-examples)
     - [geerlingguy/ansible-for-devops](https://github.com/geerlingguy/ansible-for-devops)
+- [pesterhazy/vagrant-lamp-ansible](https://github.com/pesterhazy/vagrant-lamp-ansible/)
 - [bcoe/librarian-ansible](https://github.com/bcoe/librarian-ansible)
+
+### Articles
+
 - [Leonid Mirsky - Creating hadoop test environment with ansible and vagrant](http://leonidmirsky.com/ansible/hadoop/devops/2013/11/19/creating-hadoop-test-environment-with-ansible-and-vagrant.html)
 - [An example of provisioning and deployment with Ansible - Stavros' Stuff](http://www.stavros.io/posts/example-provisioning-and-deployment-ansible/)
 
