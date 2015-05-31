@@ -4,17 +4,34 @@
   vars_files:
     - vars/init.yml
 
-  tasks:
+  pre_tasks:
     - name: playbook.yml | Hello World!
       shell: /bin/echo "<h1>Hello World! from playbook.yml</h1>" > /vagrant/project/www/index.html
 
-    - name: playbook.yml | PHP Info
-      shell: /bin/echo "<?php phpinfo(); ?>" > /vagrant/project/www/info.php
+    - name: playbook.yml | Ensure system packages are present
+      apt: name={{ item }} state=latest update_cache=yes
+      with_items:
+        - git
+        - sudo
+        - tree
+        - unzip
+        - vim
 
-    - name: playbook.yml | Install Apache libapache2-mod-php5
-      apt: pkg=libapache2-mod-php5 state=installed update_cache=true
+    - name: playbook.yml | Ensure /var/www is present
+      file: path=/var/www state=directory
+
+    - name: playbook.yml | Create symlink in /var/www to project web root
+      file: src=/vagrant/project/www dest=/var/www/project state=link
 
   roles:
     - { role: geerlingguy.apache }
     - { role: geerlingguy.mysql }
     - { role: geerlingguy.php }
+
+  tasks:
+    - name: playbook.yml | Generate PHP Info file to test setup
+      shell: /bin/echo "<?php phpinfo(); ?>" > /vagrant/project/www/info.php
+
+  post_tasks:
+    - name: playbook.yml | EOF
+      shell: /bin/echo "EOF"

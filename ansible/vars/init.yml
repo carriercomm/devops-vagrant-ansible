@@ -4,7 +4,7 @@
   # @see https://galaxy.ansible.com/list#/roles/428
   apache_vhosts:
     - { servername: "project.dev",
-        documentroot: "/vagrant/project/www/" }
+        documentroot: "/var/www/project/" }
   apache_mods_enabled:
     - rewrite.load
 
@@ -13,12 +13,21 @@
   # @see: http://packages.ubuntu.com/source/trusty-updates/php5
   php_packages:
     - php5
+    - libapache2-mod-php5
     - php5-cgi
     - php5-cli
     - php5-common
     - php5-curl
     - php5-dev
+    - php5-gd
+    - php5-ldap
+    - php5-mcrypt
+    - php5-memcached
     - php5-mysqlnd
+    - php5-sqlite
+    - php5-xdebug
+    - php5-xmlrpc
+    - php5-xsl
 
   # role: geerlingguy.mysql
   # @see https://galaxy.ansible.com/list#/roles/435

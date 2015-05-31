@@ -1,7 +1,7 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
-Configuring basic LAMP stack and blank project structure with Vangrant & Ansible
+Configuring Ansible Galaxy based LAMP stack and blank project structure
 
 Requirements
 ---------------
@@ -34,6 +34,7 @@ References
 ### Docs
 
 - [Ansible Provisioning - Vagrant Documentation](https://docs.vagrantup.com/v2/provisioning/ansible.html)
+- [Playbook Roles and Include Statements — Ansible Documentation](http://docs.ansible.com/playbooks_roles.html)
 - [Ansible Galaxy — Ansible Documentation](http://docs.ansible.com/galaxy.html)
 
 ### Code Examples
