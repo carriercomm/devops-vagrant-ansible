@@ -1,16 +1,15 @@
 ---
 
   # role: geerlingguy.apache
-  apache_listen_port: 80
+  # @see https://galaxy.ansible.com/list#/roles/428
   apache_vhosts:
-    - {servername: "project.dev", documentroot: "/vagrant/project/www/"}
+    - { servername: "project.dev",
+        documentroot: "/vagrant/project/www/" }
   apache_mods_enabled:
     - rewrite.load
 
   # role: geerlingguy.php
-  php_memory_limit: "128M"
-  php_max_execution_time: "90"
-  php_upload_max_filesize: "256M"
+  # @see https://galaxy.ansible.com/list#/roles/432
   # @see: http://packages.ubuntu.com/source/trusty-updates/php5
   php_packages:
     - php5
@@ -21,8 +20,8 @@
     - php5-dev
     - php5-mysqlnd
 
-
   # role: geerlingguy.mysql
+  # @see https://galaxy.ansible.com/list#/roles/435
   mysql_root_password: rootpassword
   mysql_databases:
     - name: project_dev
@@ -31,4 +30,3 @@
       host: "%"
       password: projectuserpassword
       priv: "project_dev.*:ALL"
-

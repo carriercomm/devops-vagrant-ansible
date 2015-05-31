@@ -1,7 +1,7 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
-# _Work In Progress_
+Configuring basic LAMP stack and blank project structure with Vangrant & Ansible
 
 Requirements
 ---------------
@@ -49,5 +49,7 @@ References
 - [Leonid Mirsky - Creating hadoop test environment with ansible and vagrant](http://leonidmirsky.com/ansible/hadoop/devops/2013/11/19/creating-hadoop-test-environment-with-ansible-and-vagrant.html)
 - [An example of provisioning and deployment with Ansible - Stavros' Stuff](http://www.stavros.io/posts/example-provisioning-and-deployment-ansible/)
 
+### Troubleshooting
 
+- [MySQL - Connect to your database remotely | Knowledge Center | Rackspace Hosting](https://www.rackspace.com/knowledge_center/article/mysql-connect-to-your-database-remotely)
 
