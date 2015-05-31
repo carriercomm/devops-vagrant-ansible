@@ -11,6 +11,7 @@
     - name: playbook.yml | Ensure system packages are present
       apt: name={{ item }} state=latest update_cache=yes
       with_items:
+        - curl
         - git
         - sudo
         - tree
@@ -27,6 +28,7 @@
     - { role: geerlingguy.apache }
     - { role: geerlingguy.mysql }
     - { role: geerlingguy.php }
+    - { role: geerlingguy.composer }
 
   tasks:
     - name: playbook.yml | Generate PHP Info file to test setup

@@ -1,7 +1,8 @@
 DevOps - Vagrant / Ansible project structure
 =============================================
 
-Configuring Ansible Galaxy based LAMP stack and blank project structure
+Vagrant / Ansible Galaxy based LAMP stack and blank project structure
+
 
 Requirements
 ---------------
@@ -20,6 +21,10 @@ Installation
     
     $ ansible-galaxy install -r ansible/requirements.yml -p ansible/roles/vendor --force --ignore-errors
     $ vagrant up
+
+### Hosts file
+
+    192.168.33.10   project.dev
 
 
 Known Issues
@@ -54,3 +59,12 @@ References
 
 - [MySQL - Connect to your database remotely | Knowledge Center | Rackspace Hosting](https://www.rackspace.com/knowledge_center/article/mysql-connect-to-your-database-remotely)
 
+
+Licence
+---------
+
+Unless explicitly noted otherwise, the content of this package is released under the [GNU Affero General Public License version 3 (AGPLv3)](http://www.gnu.org/licenses/agpl.html)
+
+[Why the GNU Affero GPL](http://www.gnu.org/licenses/why-affero-gpl.html)
+
+Copyright © 2014-2015 [Stéphane Thibault](http://www.cavalierblanc.com/).

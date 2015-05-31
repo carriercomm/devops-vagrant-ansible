@@ -11,3 +11,6 @@
 
 # @see https://galaxy.ansible.com/list#/roles/432
 - src: geerlingguy.php
+
+# @see https://galaxy.ansible.com/list#/roles/429
+- src: geerlingguy.composer
